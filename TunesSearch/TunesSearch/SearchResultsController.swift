@@ -10,6 +10,46 @@ import Foundation
 
 class SearchResultsController {
     
+    func fetchMusicResults(_ completion: @escaping ([Result]?) -> Void) {
+        
+        let url = baseURL.appendingPathComponent("us/apple-music/top-albums/all/25/explicit").appendingPathExtension("json")
+        
+        URLSession.shared.dataTask(with: url) { (data, response, error) in
+            
+            if let error = error {
+                NSLog("Error with data task: \(error)")
+                completion(nil)
+                return
+            }
+            
+            if let response = response {
+                NSLog("\(response)")
+                completion(nil)
+            }
+            
+            guard let data = data else {
+                NSLog("No data")
+                completion(nil)
+                return
+            }
+            
+            do {
+                let decoder = JSONDecoder()
+                let results = try decoder.decode(SearchResults.self, from: data)
+                self.results = results.feed.results
+                completion(self.results)
+            } catch {
+                NSLog("Unable to Decode JSON: \(error)")
+                completion(nil)
+                
+            }
+        }.resume()
+    }
+        
+        
+        
+        
+    
     
     
     
@@ -35,7 +75,7 @@ class SearchResultsController {
     
     var feed: Feed?
     var results: [Result] = []
-    private let baseURL = URL(string: "https://rss.itunes.apple.com/api/v1")
+    private let baseURL = URL(string: "https://rss.itunes.apple.com/api/v1")!
     
     
 }
