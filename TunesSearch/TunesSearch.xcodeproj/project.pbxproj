@@ -15,6 +15,7 @@
 		C47DFDF022A422660070B53B /* SearchResultsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C47DFDEF22A422660070B53B /* SearchResultsController.swift */; };
 		C47DFDF222A426DA0070B53B /* MovieTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C47DFDF122A426DA0070B53B /* MovieTableViewController.swift */; };
 		C47DFDF422A4270C0070B53B /* MusicTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C47DFDF322A4270C0070B53B /* MusicTableViewController.swift */; };
+		C47DFDF622A4273B0070B53B /* AppsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C47DFDF522A4273B0070B53B /* AppsTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		C47DFDEF22A422660070B53B /* SearchResultsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchResultsController.swift; sourceTree = "<group>"; };
 		C47DFDF122A426DA0070B53B /* MovieTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieTableViewController.swift; sourceTree = "<group>"; };
 		C47DFDF322A4270C0070B53B /* MusicTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicTableViewController.swift; sourceTree = "<group>"; };
+		C47DFDF522A4273B0070B53B /* AppsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppsTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,6 +66,7 @@
 				C47DFDEF22A422660070B53B /* SearchResultsController.swift */,
 				C47DFDF122A426DA0070B53B /* MovieTableViewController.swift */,
 				C47DFDF322A4270C0070B53B /* MusicTableViewController.swift */,
+				C47DFDF522A4273B0070B53B /* AppsTableViewController.swift */,
 				C47DFDDB22A4202C0070B53B /* AppDelegate.swift */,
 				C47DFDDD22A4202C0070B53B /* ViewController.swift */,
 				C47DFDE222A4202D0070B53B /* Assets.xcassets */,
@@ -144,6 +147,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C47DFDF222A426DA0070B53B /* MovieTableViewController.swift in Sources */,
+				C47DFDF622A4273B0070B53B /* AppsTableViewController.swift in Sources */,
 				C47DFDF022A422660070B53B /* SearchResultsController.swift in Sources */,
 				C47DFDDE22A4202C0070B53B /* ViewController.swift in Sources */,
 				C47DFDEE22A421DD0070B53B /* SearchResults.swift in Sources */,
