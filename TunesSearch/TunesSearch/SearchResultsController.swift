@@ -93,6 +93,7 @@ class SearchResultsController {
                 completion(nil)
                 return
             }
+           
             
             if let response = response {
                 NSLog("\(response)")

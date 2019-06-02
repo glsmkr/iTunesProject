@@ -13,6 +13,7 @@
 		C47DFDE622A4202D0070B53B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C47DFDE422A4202D0070B53B /* LaunchScreen.storyboard */; };
 		C47DFDEE22A421DD0070B53B /* SearchResults.swift in Sources */ = {isa = PBXBuildFile; fileRef = C47DFDED22A421DD0070B53B /* SearchResults.swift */; };
 		C47DFDF022A422660070B53B /* SearchResultsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C47DFDEF22A422660070B53B /* SearchResultsController.swift */; };
+		C47DFDF222A426DA0070B53B /* MovieTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C47DFDF122A426DA0070B53B /* MovieTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		C47DFDE722A4202D0070B53B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C47DFDED22A421DD0070B53B /* SearchResults.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchResults.swift; sourceTree = "<group>"; };
 		C47DFDEF22A422660070B53B /* SearchResultsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchResultsController.swift; sourceTree = "<group>"; };
+		C47DFDF122A426DA0070B53B /* MovieTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +60,7 @@
 			children = (
 				C47DFDED22A421DD0070B53B /* SearchResults.swift */,
 				C47DFDEF22A422660070B53B /* SearchResultsController.swift */,
+				C47DFDF122A426DA0070B53B /* MovieTableViewController.swift */,
 				C47DFDDB22A4202C0070B53B /* AppDelegate.swift */,
 				C47DFDDD22A4202C0070B53B /* ViewController.swift */,
 				C47DFDE222A4202D0070B53B /* Assets.xcassets */,
@@ -137,6 +140,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C47DFDF222A426DA0070B53B /* MovieTableViewController.swift in Sources */,
 				C47DFDF022A422660070B53B /* SearchResultsController.swift in Sources */,
 				C47DFDDE22A4202C0070B53B /* ViewController.swift in Sources */,
 				C47DFDEE22A421DD0070B53B /* SearchResults.swift in Sources */,
