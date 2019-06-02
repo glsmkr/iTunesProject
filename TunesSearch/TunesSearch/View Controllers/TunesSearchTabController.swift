@@ -14,11 +14,11 @@ class TunesSearchTabController: UITabBarController {
         super.viewDidLoad()
         
         let movieTVC = MovieTableViewController()
-        movieTVC.tabBarItem = UITabBarItem(title: "Top Movies", image: UIImage(named: "movies"), tag: 0)
+        movieTVC.tabBarItem = UITabBarItem(title: "Movies", image: UIImage(named: "movies"), tag: 0)
         let appsTVC = AppsTableViewController()
-        appsTVC.tabBarItem = UITabBarItem(title: "Top Apps", image: UIImage(named: "apps"), tag: 1)
+        appsTVC.tabBarItem = UITabBarItem(title: "Apps", image: UIImage(named: "apps"), tag: 1)
         let musicTVC = MusicTableViewController()
-        musicTVC.tabBarItem = UITabBarItem(title: "Top Music", image: UIImage(named: "music"), tag: 2)
+        musicTVC.tabBarItem = UITabBarItem(title: "Music", image: UIImage(named: "music"), tag: 2)
         let viewControllerList = [musicTVC, appsTVC, movieTVC]
         
         viewControllers = viewControllerList.map { UINavigationController(rootViewController: $0) }

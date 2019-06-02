@@ -29,6 +29,16 @@ class MovieTableViewController: UITableViewController {
                 self.tableView.reloadData()
             }
         }
+        
+        searchResultsController.fetchMovieFeed { (feed) in
+            if let feed = feed {
+                DispatchQueue.main.async {
+                    self.navigationItem.title = "\(feed.title)"
+                    
+                }
+            }
+            
+        }
     }
     
     

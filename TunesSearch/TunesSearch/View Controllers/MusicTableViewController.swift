@@ -24,6 +24,18 @@ class MusicTableViewController: UITableViewController {
                 self.tableView.reloadData()
             }
         }
+        
+        searchResultsController.fetchMusicFeed { (feed) in
+            if let feed = feed {
+                DispatchQueue.main.async {
+                    self.navigationItem.title = "\(feed.title)"
+                    
+                }
+            }
+            
+        }
+        
+        
     }
     
   

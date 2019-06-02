@@ -24,6 +24,17 @@ class AppsTableViewController: UITableViewController {
                 self.tableView.reloadData()
             }
         }
+        
+        searchResultsController.fetchAppFeed { (feed) in
+            if let feed = feed {
+                DispatchQueue.main.async {
+                    self.navigationItem.title = "\(feed.title)"
+                    
+                }
+            }
+            
+        }
+        
     }
     
     
