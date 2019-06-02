@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		C47DFDDC22A4202C0070B53B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C47DFDDB22A4202C0070B53B /* AppDelegate.swift */; };
-		C47DFDDE22A4202C0070B53B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C47DFDDD22A4202C0070B53B /* ViewController.swift */; };
 		C47DFDE322A4202D0070B53B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C47DFDE222A4202D0070B53B /* Assets.xcassets */; };
 		C47DFDE622A4202D0070B53B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C47DFDE422A4202D0070B53B /* LaunchScreen.storyboard */; };
 		C47DFDEE22A421DD0070B53B /* SearchResults.swift in Sources */ = {isa = PBXBuildFile; fileRef = C47DFDED22A421DD0070B53B /* SearchResults.swift */; };
@@ -23,7 +22,6 @@
 /* Begin PBXFileReference section */
 		C47DFDD822A4202C0070B53B /* TunesSearch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TunesSearch.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C47DFDDB22A4202C0070B53B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		C47DFDDD22A4202C0070B53B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		C47DFDE222A4202D0070B53B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C47DFDE522A4202D0070B53B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C47DFDE722A4202D0070B53B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -71,7 +69,6 @@
 				C47DFDFA22A428970070B53B /* Model Controller */,
 				C47DFDFB22A428A80070B53B /* View Controllers */,
 				C47DFDDB22A4202C0070B53B /* AppDelegate.swift */,
-				C47DFDDD22A4202C0070B53B /* ViewController.swift */,
 				C47DFDE222A4202D0070B53B /* Assets.xcassets */,
 				C47DFDE422A4202D0070B53B /* LaunchScreen.storyboard */,
 				C47DFDE722A4202D0070B53B /* Info.plist */,
@@ -181,7 +178,6 @@
 				C47DFDF622A4273B0070B53B /* AppsTableViewController.swift in Sources */,
 				C47DFDF022A422660070B53B /* SearchResultsController.swift in Sources */,
 				C47DFDFD22A42B700070B53B /* MediaTableViewCell.swift in Sources */,
-				C47DFDDE22A4202C0070B53B /* ViewController.swift in Sources */,
 				C47DFDEE22A421DD0070B53B /* SearchResults.swift in Sources */,
 				C47DFDDC22A4202C0070B53B /* AppDelegate.swift in Sources */,
 				C47DFDF422A4270C0070B53B /* MusicTableViewController.swift in Sources */,
