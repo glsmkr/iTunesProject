@@ -16,6 +16,7 @@
 		C47DFDF222A426DA0070B53B /* MovieTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C47DFDF122A426DA0070B53B /* MovieTableViewController.swift */; };
 		C47DFDF422A4270C0070B53B /* MusicTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C47DFDF322A4270C0070B53B /* MusicTableViewController.swift */; };
 		C47DFDF622A4273B0070B53B /* AppsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C47DFDF522A4273B0070B53B /* AppsTableViewController.swift */; };
+		C47DFDF822A427E70070B53B /* TunesSearchTabController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C47DFDF722A427E70070B53B /* TunesSearchTabController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		C47DFDF122A426DA0070B53B /* MovieTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieTableViewController.swift; sourceTree = "<group>"; };
 		C47DFDF322A4270C0070B53B /* MusicTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicTableViewController.swift; sourceTree = "<group>"; };
 		C47DFDF522A4273B0070B53B /* AppsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppsTableViewController.swift; sourceTree = "<group>"; };
+		C47DFDF722A427E70070B53B /* TunesSearchTabController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TunesSearchTabController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,11 +64,9 @@
 		C47DFDDA22A4202C0070B53B /* TunesSearch */ = {
 			isa = PBXGroup;
 			children = (
-				C47DFDED22A421DD0070B53B /* SearchResults.swift */,
-				C47DFDEF22A422660070B53B /* SearchResultsController.swift */,
-				C47DFDF122A426DA0070B53B /* MovieTableViewController.swift */,
-				C47DFDF322A4270C0070B53B /* MusicTableViewController.swift */,
-				C47DFDF522A4273B0070B53B /* AppsTableViewController.swift */,
+				C47DFDF922A428820070B53B /* Model */,
+				C47DFDFA22A428970070B53B /* Model Controller */,
+				C47DFDFB22A428A80070B53B /* View Controllers */,
 				C47DFDDB22A4202C0070B53B /* AppDelegate.swift */,
 				C47DFDDD22A4202C0070B53B /* ViewController.swift */,
 				C47DFDE222A4202D0070B53B /* Assets.xcassets */,
@@ -74,6 +74,33 @@
 				C47DFDE722A4202D0070B53B /* Info.plist */,
 			);
 			path = TunesSearch;
+			sourceTree = "<group>";
+		};
+		C47DFDF922A428820070B53B /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				C47DFDED22A421DD0070B53B /* SearchResults.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		C47DFDFA22A428970070B53B /* Model Controller */ = {
+			isa = PBXGroup;
+			children = (
+				C47DFDEF22A422660070B53B /* SearchResultsController.swift */,
+			);
+			path = "Model Controller";
+			sourceTree = "<group>";
+		};
+		C47DFDFB22A428A80070B53B /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				C47DFDF122A426DA0070B53B /* MovieTableViewController.swift */,
+				C47DFDF322A4270C0070B53B /* MusicTableViewController.swift */,
+				C47DFDF522A4273B0070B53B /* AppsTableViewController.swift */,
+				C47DFDF722A427E70070B53B /* TunesSearchTabController.swift */,
+			);
+			path = "View Controllers";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -147,6 +174,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C47DFDF222A426DA0070B53B /* MovieTableViewController.swift in Sources */,
+				C47DFDF822A427E70070B53B /* TunesSearchTabController.swift in Sources */,
 				C47DFDF622A4273B0070B53B /* AppsTableViewController.swift in Sources */,
 				C47DFDF022A422660070B53B /* SearchResultsController.swift in Sources */,
 				C47DFDDE22A4202C0070B53B /* ViewController.swift in Sources */,
