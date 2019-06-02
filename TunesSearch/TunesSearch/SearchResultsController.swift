@@ -45,7 +45,42 @@ class SearchResultsController {
             }
         }.resume()
     }
+    
+    func fetchAppResults(_ completion: @escaping ([Result]?) -> Void) {
         
+        let url = baseURL.appendingPathComponent("/us/ios-apps/new-apps-we-love/all/25/explicit").appendingPathExtension("json")
+        
+        URLSession.shared.dataTask(with: url) { (data, response, error) in
+            
+            if let error = error {
+                NSLog("Error with data task: \(error)")
+                completion(nil)
+                return
+            }
+            
+            if let response = response {
+                NSLog("\(response)")
+                completion(nil)
+            }
+            
+            guard let data = data else {
+                NSLog("No data")
+                completion(nil)
+                return
+            }
+            
+            do {
+                let decoder = JSONDecoder()
+                let results = try decoder.decode(SearchResults.self, from: data)
+                self.results = results.feed.results
+                completion(self.results)
+            } catch {
+                NSLog("Unable to Decode JSON: \(error)")
+                completion(nil)
+                
+            }
+        }.resume()
+    }
         
         
         
