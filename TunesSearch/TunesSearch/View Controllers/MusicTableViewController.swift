@@ -53,10 +53,19 @@ class MusicTableViewController: UITableViewController {
         cell.artistLabel.text = result.artistName
         cell.genreLabel.text = result.genres[0].name
         cell.releaseDateLabel.text = "Released on \(result.releaseDate)"
-        
-        guard let url = URL(string: result.artworkUrl100), let imageData = try? Data(contentsOf: url) else { return cell }
-        
-        cell.mediaImageView.image = UIImage(data: imageData)
+       
+        if let url = URL(string: result.artworkUrl100) {
+            
+            DispatchQueue.global().async {
+                var image: UIImage? = nil
+                if let imageData = try? Data(contentsOf: url) {
+                    image = UIImage(data: imageData)
+                }
+                DispatchQueue.main.async {
+                    cell.mediaImageView.image = image
+                }
+            }
+        }
         
         return cell
     }
