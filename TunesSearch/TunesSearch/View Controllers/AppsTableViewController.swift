@@ -47,13 +47,13 @@ class AppsTableViewController: UITableViewController {
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: reuseIdentifier, for: indexPath) as! MediaTableViewCell
         
-        let test = searchResultsController.results[indexPath.row]
-        cell.nameLabel.text = test.name
-        cell.artistLabel.text = test.artistName
-        cell.genreLabel.text = test.genres[0].name
-        cell.releaseDateLabel.text = "Released on \(test.releaseDate)"
+        let result = searchResultsController.results[indexPath.row]
+        cell.nameLabel.text = result.name
+        cell.artistLabel.text = result.artistName
+        cell.genreLabel.text = result.genres[0].name
+        cell.releaseDateLabel.text = "Released on \(result.releaseDate)"
         
-        guard let url = URL(string: test.artworkUrl100), let imageData = try? Data(contentsOf: url) else { return cell }
+        guard let url = URL(string: result.artworkUrl100), let imageData = try? Data(contentsOf: url) else { return cell }
         
         cell.mediaImageView.image = UIImage(data: imageData)
         
