@@ -1,3 +1,3 @@
 # iTunesProject
 
-App the displays results from the iTunes API.
+App that displays results from the iTunes API.
